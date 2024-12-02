@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudTrail Log Search</title>
+</head>
+<body>
+    <h1>Search AWS CloudTrail Logs</h1>
+    <form action="/search" method="POST">
+        <label for="eventID">Event ID:</label>
+        <input type="text" id="eventID" name="eventID"><br><br>
+
+        <label for="userID">User ID:</label>
+        <input type="text" id="userID" name="userID"><br><br>
+
+        <label for="startTime">Start Time (YYYY-MM-DDTHH:MM:SS):</label>
+        <input type="text" id="startTime" name="startTime"><br><br>
+
+        <label for="endTime">End Time (YYYY-MM-DDTHH:MM:SS):</label>
+        <input type="text" id="endTime" name="endTime"><br><br>
+
+        <label for="accountID">Account ID:</label>
+        <input type="text" id="accountID" name="accountID"><br><br>
+
+        <label for="region">Region:</label>
+        <input type="text" id="region" name="region"><br><br>
+
+        <button type="submit">Search Logs</button>
+    </form>
+</body>
+</html>
